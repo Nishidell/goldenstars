@@ -38,7 +38,7 @@ export default function Navbar() {
         {/* Bright Yellow Navigation Links */}
         <div className="hidden md:flex gap-8 text-sm font-medium">
           <Link href="/" className="text-[#FFCC00] hover:text-white transition">Home</Link>
-          <Link href="/about" className="hover:text-[#FFCC00] transition">About Us</Link>
+          <Link href="#about" className="hover:text-[#FFCC00] transition">About Us</Link>
           <Link href="#products" className="hover:text-[#FFCC00] transition">Products</Link>
           <Link href="#services" className="hover:text-[#FFCC00] transition">Services</Link>
           <Link href="#news" className="hover:text-[#FFCC00] transition">News</Link>
