@@ -68,7 +68,7 @@ export default function News() {
       {/* View All Button */}
       <div className="text-center">
         <Link 
-          href="#all-news" 
+          href="/news" 
           className="inline-flex items-center gap-2 bg-[#D4AF37] text-[#2A1810] px-8 py-3 rounded font-bold hover:bg-[#c5a028] transition shadow-lg"
         >
           View All News

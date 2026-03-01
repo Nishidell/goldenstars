@@ -22,7 +22,7 @@ export default function About() {
           <div className="pt-2">
             {/* Gold Link */}
             <Link 
-              href="#about-more" 
+              href="/about" 
               className="inline-flex items-center gap-2 text-[#D4AF37] font-bold hover:text-[#4A2E1B] transition"
             >
               Learn More About Us

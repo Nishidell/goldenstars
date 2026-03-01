@@ -81,7 +81,7 @@ export default function Services() {
       {/* View All Services Link */}
       <div className="text-center">
         <Link 
-          href="#all-services" 
+          href="/services" 
           className="inline-flex items-center gap-2 text-[#4A2E1B] font-bold hover:text-[#D4AF37] transition"
         >
           View All Services

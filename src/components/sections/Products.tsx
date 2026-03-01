@@ -66,7 +66,7 @@ export default function Products() {
 
         {/* View All Button */}
         <div className="text-center">
-          <Link href="#all-products" className="inline-flex items-center gap-2 bg-[#D4AF37] text-[#2A1810] px-8 py-3 rounded font-bold hover:bg-[#c5a028] transition shadow-lg">
+          <Link href="/products" className="inline-flex items-center gap-2 bg-[#D4AF37] text-[#2A1810] px-8 py-3 rounded font-bold hover:bg-[#c5a028] transition shadow-lg">
             View All Products
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
