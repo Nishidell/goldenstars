@@ -1,10 +1,37 @@
+"use client"; // This must be the very first line!
+
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 export default function Navbar() {
+  // State to track if the user has scrolled down
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Effect to listen for the scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      // If the user scrolls down more than 50 pixels, trigger the solid background
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Add the event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+    
+    // Clean up the event listener when the component unmounts
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="bg-[#4A2E1B] text-white w-full shadow-md"> 
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <header 
+      className={`fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-[#4A2E1B] shadow-md py-4' : 'bg-transparent py-6'
+      } text-white`}
+    > 
+      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6">
         
         <div className="flex items-center gap-3">
           {/* Coffee cup accent in Premium Gold */}
