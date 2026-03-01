@@ -14,9 +14,10 @@ export default function ContactCTA() {
         </p>
         
         <div className="pt-4">
+          {/* Updated Bright Yellow Contact Button */}
           <Link 
             href="#contact-form" 
-            className="inline-flex items-center gap-2 bg-[#D4AF37] text-[#2A1810] px-8 py-4 rounded font-bold hover:bg-[#c5a028] transition shadow-lg text-lg"
+            className="inline-flex items-center gap-2 bg-[#FFCC00] text-[#2A1810] px-8 py-4 rounded font-bold hover:bg-[#E6B800] transition shadow-lg text-lg"
           >
             Contact Us
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
